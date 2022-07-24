@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;500&display=swap');
+
+body{   
+  margin:0 auto; 
+  background: #1F2028;
+  font-family: 'Public Sans';
+  color: white;
+
+  
+}
+
+h1 {
+  font-weight: 500;
+}
+
+
+.navbar{
+
+    overflow: hidden;
+    background-color: #1F2028;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: flex;
+    z-index: 10;
+}
+  
+  /* first link inside the navbar */
+.navbar  a {
+  font-weight: 100;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+  
+  }
+
+
+  
+  /* Change background on mouse-over */
+  .navbar  a:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    height: 4px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  .navbar  a:hover {
+    opacity: 1;
+  }
+  
+  .navbar  a::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: white;
+  }
+
+  .navbar  a::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .navbar  a:hover::before {
+    width: 100%;
+  }
+
+  .sub-nav a{
+    color: green;
+  }
+
+  .sub-nav{
+    display: flex;
+  }
+  
+
+/* utilities */
+
+
+  .content {
+    margin-top: 50px;
+  }
+
+
+
+.projectTitle {
+
+        color: white;
+        margin-top: 2rem;
+      
+
+    }
+
+.projectContainer{
+      border-radius: 30px;
+      display: flex;
+      justify-content: space-between;
+  
+      width: 85vw;
+      box-sizing: border-box;
+      margin: auto;
+      margin-top: 2rem;
+      position: relative;
+      background-color: #2E3039;
+      border-style: solid;
+      border-color: #2E3039;
+
+      transition: .5s;
+      transition-property: border;
+      cursor:pointer;
+  }
+
+  .projectContainer:hover{
+    border: white;
+    border-style: solid;
+  }
+
+  .player{
+    margin: 1rem
+  }
+  .projectText{
+    margin: 3em;
+  }
+
+  .experienceContainer{
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    height: 25rem;
+    box-sizing: border-box;
+    margin: 1rem;
+    position: relative;
+    background-color: #2E3039;
+    border-style: solid;
+    border-color: #2E3039;
+
+    transition: .5s;
+    transition-property: border;
+    cursor:pointer;
+}
+
+.allExperiences{
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center
+}
+
