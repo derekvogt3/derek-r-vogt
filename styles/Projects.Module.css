@@ -1,21 +1,8 @@
-.projectContainer{
-    border-radius: 30px;
 
-    width: 85vw;
-    box-sizing: border-box;
-    margin: auto;
-    position: relative;
-    background-color: #2E3039;
-}
 
-.test {
-    color: green;
-}
+
 
 .anotherTest {
     color:yellow
 }
 
-.player {
-margin: 2rem;
-  }

@@ -10,7 +10,11 @@ body{
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 100;
 }
 
 
@@ -78,7 +82,7 @@ h1 {
   }
 
   .sub-nav a{
-    color: green;
+    color: white;
   }
 
   .sub-nav{
@@ -137,19 +141,39 @@ h1 {
   .experienceContainer{
     border-radius: 30px;
     display: flex;
-    justify-content: space-between;
-    width: 25rem;
-    height: 25rem;
+    flex-wrap: wrap;
     box-sizing: border-box;
     margin: 1rem;
     position: relative;
     background-color: #2E3039;
     border-style: solid;
     border-color: #2E3039;
-
     transition: .5s;
     transition-property: border;
     cursor:pointer;
+}
+
+.left-experience-container{
+  width: 25rem;
+  height: 25rem;
+  flex-direction: column;
+  justify-content: space-between;  
+  transition: 1s;
+
+}
+
+.right-experience-container{
+  width: 25rem;
+  height: 25rem;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  transition: 1s;
+
+}
+.experienceContainer:hover .left-experience-container{
+  background-color: green;
+  width: 50rem;
 }
 
 .allExperiences{
